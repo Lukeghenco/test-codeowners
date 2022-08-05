@@ -85,7 +85,6 @@ export default function DiffLineCommentBox({viewer, comment}: DiffLineCommentBox
             display: 'block'
           }}
         >
-          <Box>
             <Box sx={{display: 'flex', justifyContent: 'space-between'}}>
               <Box>
                 <Avatar alt="Avatar image for comment author" size={24} src={comment.author.avatarUrl} sx={{mr: 2}} />
@@ -102,6 +101,7 @@ export default function DiffLineCommentBox({viewer, comment}: DiffLineCommentBox
                     {comment.author.login}
                   </Link>
                 </Text>
+                <div>Play with another Link here</div>
                 <Link
                   href={comment.currentDiffResourcePath}
                   sx={{
@@ -159,7 +159,6 @@ export default function DiffLineCommentBox({viewer, comment}: DiffLineCommentBox
                   </ActionMenu.Overlay>
                 </ActionMenu>
               </Box>
-            </Box>
             <Box sx={{ml: 5, mt: 2}}>
               <SafeHTMLBox
                 as="div"
