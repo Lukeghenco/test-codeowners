@@ -85,7 +85,6 @@ export default function DiffLineCommentBox({viewer, comment}: DiffLineCommentBox
             display: 'block'
           }}
         >
-          <Box>
             <Box sx={{display: 'flex', justifyContent: 'space-between'}}>
               <div>Game Over</div>
               <Box>
@@ -132,7 +131,6 @@ export default function DiffLineCommentBox({viewer, comment}: DiffLineCommentBox
                   </ActionMenu.Overlay>
                 </ActionMenu>
               </Box>
-            </Box>
             <Box sx={{ml: 5, mt: 2}}>
               <SafeHTMLBox
                 as="div"
