@@ -86,35 +86,7 @@ export default function DiffLineCommentBox({viewer, comment}: DiffLineCommentBox
           }}
         >
             <Box sx={{display: 'flex', justifyContent: 'space-between'}}>
-              <Box>
-                <Avatar alt="Avatar image for comment author" size={24} src={comment.author.avatarUrl} sx={{mr: 2}} />
-                <Text as="strong" sx={{fontWeight: 'bold', mr: 1}}>
-                  <Link
-                    href={comment.author.url}
-                    sx={{
-                      color: 'fg.default',
-                      '&:hover': {
-                        color: 'accent.fg'
-                      }
-                    }}
-                  >
-                    {comment.author.login}
-                  </Link>
-                </Text>
-                <div>Play with another Link here</div>
-                <Link
-                  href={comment.currentDiffResourcePath}
-                  sx={{
-                    color: 'fg.muted',
-                    fontWeight: '400',
-                    '&:hover': {
-                      color: 'accent.fg'
-                    }
-                  }}
-                >
-                  <Ago timestamp={commentPublishedData} />
-                </Link>
-              </Box>
+              <div>Game Over</div>
               <Box>
                 <Label sx={{mr: 1, textTransform: 'capitalize'}}>{comment.viewerRelationship.toLowerCase()}</Label>
                 {comment.viewerDidAuthor && <Label>Author</Label>}
