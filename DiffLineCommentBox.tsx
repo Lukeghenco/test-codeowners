@@ -13,10 +13,7 @@ const actionListItemStyles = {
     color: 'inherit',
     bg: 'inherit'
   },
-  '&:hover:not([aria-disabled])': {
-    color: 'fg.onEmphasis',
-    bg: 'accent.emphasis'
-  }
+ 
 }
 
 const actionListLinkItemStyles = {
@@ -32,7 +29,7 @@ export interface DiffLineCommentBoxProps {
     diffView: string
   }
   comment: {
-    id: string
+    id: number
     author: {
       login: string
       avatarUrl: string
@@ -43,12 +40,10 @@ export interface DiffLineCommentBoxProps {
         login: string
       }
     }
-    isMinimized: boolean
+    isMinimized: string
     path: string
     bodyHTML: string
     currentDiffResourcePath: string
-    publishedAt: string
-    viewerRelationship: string
     viewerDidAuthor: boolean
     stafftoolsUrl: string
   }
